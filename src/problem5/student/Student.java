@@ -52,7 +52,6 @@ public class Student {
     public void setAppearingCounter(int appearingCounter){
      this.appearingCounter=appearingCounter;
     }
-
     public String toString(){ 
-    return "Student rollnumber- "+rollNumber+",name- "+Name+",backlogs- "+backLogCounter+",appearing- "+appearingCounter
+    return "Student rollnumber- "+rollNumber+",name- "+Name+",backlogs- "+backLogCounter+",appearing- "+appearingCounter;
 }
