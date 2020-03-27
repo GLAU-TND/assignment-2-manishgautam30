@@ -98,5 +98,42 @@ public class MyBinarySearchTree {
         System.out.println("Nodes without left child - "+count);
     }
          
+       
+
+       public void printLeftTree(TreeNode root) {
+        if (root == null)
+         system.out.println ("empty tree");
+        list.add(root);
+        list.add(null);
+
+        while (list.size() > 0) {
+            TreeNode temp = list.peek();
+
+            if (temp != null) {
+                System.out.print(temp.getData() + " ");
+                while (list.peek() != null) {
+                    if (temp.getLeft() != null){
+                        list.add(temp.getLeft());
+                       }
+                    if (temp.getRight() != null){
+                       list.add(temp.getRight());
+                      }
+
+                   
+                    list.remove();
+
+                    temp = list.peek();
+                }
+                list.add(null);
+            }
+            list.remove();
+        }
+    }
+
+
+    public void leftView(TreeNode root) {
+        list = new LinkedList<TreeNode>;  
+        printLeftTree(root);
+    }
 
 }
