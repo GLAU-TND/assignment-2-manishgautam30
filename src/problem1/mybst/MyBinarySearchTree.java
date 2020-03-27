@@ -43,3 +43,10 @@ public class MyBinarySearchTree {
         }
 
     }
+          public void traverseinOrder(TreeNode node){
+        if(node!=null){
+            traverseinOrder(node.getLeft());
+            System.out.print(node.getData()+", ");
+            traverseinOrder(node.getRight());
+        }
+    }
