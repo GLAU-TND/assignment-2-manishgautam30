@@ -22,8 +22,8 @@ public class MyCircularQueue {
 
 
 
-      public void enqueue(int rollNumber,int backLogCounter,int appearingCounter){
-        Student student = new Student(rollNumber,backLogCounter,appearingCounter);
+      public void enqueue(int rollNumber,String name,int backLogCounter,int appearingCounter){
+        Student student = new Student(rollNumber,name,backLogCounter,appearingCounter);
         Node node = new Node();
         node.setStudent(student);
 
