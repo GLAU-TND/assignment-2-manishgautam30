@@ -41,12 +41,24 @@ public class MyBinarySearchTree {
                 parent.setRight(node);
             }
         }
-
     }
-          public void traverseinOrder(TreeNode node){
+
+
+     public void traverseinOrder(TreeNode node){
         if(node!=null){
             traverseinOrder(node.getLeft());
             System.out.print(node.getData()+", ");
             traverseinOrder(node.getRight());
         }
     }
+
+     public void traversepreOrder(TreeNode node){
+        if(node!=null){
+            traversepreOrder(node.getData()+", ");
+            System.out.print(node.getLeft());
+            traversepreOrder(node.getRight());
+        }
+    }
+
+     
+}
