@@ -21,7 +21,7 @@ public class Student {
     this.backLogCounter=backLogCounter;
     this.appearingCounter=appearingCounter;
     }
-    public int getrollNumber(){
+    public int getRollNumber(){
      return rollNumber;
     }
     
@@ -29,16 +29,16 @@ public class Student {
      return Name;
     }
     
-    public int getbackLogCounter(){
+    public int getBackLogCounter(){
      return backLogCounter;
     }
     
-    public int getappearingCounter(){
+    public int getAppearingCounter(){
      return appearingCounter;
     }
 
     
-    public void setrollNumber(int rollNumber){
+    public void setRollNumber(int rollNumber){
      this.rollNumber=rollNumber;
     }
     
@@ -46,10 +46,13 @@ public class Student {
      Name=name;
     }
 
-    public void setbackLogCounter(int backLogCounter){
+    public void setBackLogCounter(int backLogCounter){
      this.backLogCounter=backLogCounter;
     }
-    public void setappearingCounter(int appearingCounter){
+    public void setAppearingCounter(int appearingCounter){
      this.appearingCounter=appearingCounter;
     }
+
+    public String toString(){ 
+    return "Student rollnumber- "+rollNumber+",name- "+Name+",backlogs- "+backLogCounter+",appearing- "+appearingCounter
 }
