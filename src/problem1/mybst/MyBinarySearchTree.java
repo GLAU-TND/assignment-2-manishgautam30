@@ -11,6 +11,7 @@ import problem1.node.TreeNode;
 import java.util.*;
 
 public class MyBinarySearchTree {
+
   TreeNode root;
 
   public TreeNode getRoot(){
@@ -132,7 +133,7 @@ public class MyBinarySearchTree {
 
 
     public void leftView(TreeNode root) {
-        list = new LinkedList<TreeNode>;  
+     static Queue<TreeNode> list = new LinkedList<TreeNode>;  
         printLeftTree(root);
     }
 
