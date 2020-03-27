@@ -62,3 +62,13 @@ public class MyCircularQueue {
         }
         System.out.println(temp.getStudent());
     }
+ 
+     public boolean isEmpty(){
+       boolean response=false;
+       if(front==rear){
+          response=true;
+        }
+        return  response;
+     }
+    
+     
