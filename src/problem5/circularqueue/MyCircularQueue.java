@@ -17,7 +17,7 @@ public class MyCircularQueue {
     public MyCircularQueue(){
         front = null;
         rear = null;
-        count = 0;
+        size= 0;
     }
 
 
@@ -36,5 +36,22 @@ public class MyCircularQueue {
 
         rear = node;
         rear.setNext(front);
-        count++;
+        size++;
     }
+
+     public void dequeue(){
+        while(size-->0){
+            Student s = front.getStudent();
+            if((s.getBackLogCounter()-s.getAppearingCounter())>0){
+                front = front.getNext();
+                rear = rear.getNext();
+            }
+            else{
+                rear.setNext(front.getNext());
+                front = front.getNext();
+            }
+        }
+    }
+
+       
+    
