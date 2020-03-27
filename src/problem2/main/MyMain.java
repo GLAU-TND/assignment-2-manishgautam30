@@ -31,6 +31,7 @@ public class MyMain {
 }
 
 /* 
+@Author:Manish Gautam
 a.TRUE :  The element is 100 that comes first in preorder transversal and last in postorder transversal.
 b.FALSE : The element in middle in preorder is 150 and in postorder is 210, hence is not same.
 */
