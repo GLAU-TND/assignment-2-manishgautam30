@@ -6,6 +6,10 @@
  */
 package problem3.main;
 // executable class
-// use problem5.student.Student class to create object of student
+
+import problem3.myqueue.MyPriorityQueue;
+import problem3.node.Node;
+import problem5.student.Student;
+
 public class MyMain {
 }
