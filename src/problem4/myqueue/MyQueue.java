@@ -37,4 +37,12 @@ public class MyQueue {
      public void setRear(Node rear){
      this.rear=rear;
      }
+
+     public Node getTemp(){
+      return temp;
+     }
+     public void setTemp(Node temp){
+     this.temp=temp;
+     }
+
 }
