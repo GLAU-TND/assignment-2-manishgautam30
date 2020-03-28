@@ -19,3 +19,15 @@ public class MyMain {
         MyBinarySearchTree bst = new MyBinarySearchTree();
         MyQueue que = new MyQueue();
         TreeNode root = new TreeNode(10);
+
+        bst.insert(root, 50);
+        bst.insert(root, 205);
+        bst.insert(root, 150);
+        bst.insert(root, 190);
+        bst.insert(root, 97);
+        bst.insert(root, 62);
+        bst.insert(root, 300);
+        bst.insert(root, 135);
+        bst.insert(root, 90);
+        bst.insert(root, 45);
+        bst.insert(root, 62);
