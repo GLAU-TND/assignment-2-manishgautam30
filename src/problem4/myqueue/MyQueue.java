@@ -16,6 +16,12 @@ public class MyQueue {
     private Node temp;
     private int size;
 
-
-
+     public MyQueue(){
+     front=null;
+     rear=null;
+     temp=null;
+     size=0;
+     }
+     
+      
 }
