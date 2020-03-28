@@ -24,25 +24,50 @@ public class MyQueue {
     }
      
      public Node getFront(){
+
       return front;
      }
      public void setFront(Node front){
+
      this.front=front;
      }
 
       
      public Node getRear(){
+
       return rear;
      }
      public void setRear(Node rear){
+
      this.rear=rear;
      }
 
      public Node getTemp(){
+
       return temp;
      }
      public void setTemp(Node temp){
+
      this.temp=temp;
      }
+
+          
+      public int getSize(MyQueue queue) {
+
+        queue.temp = queue.front;
+
+        while (queue.temp != null) {
+            size++;
+            queue.temp = queue.temp.getNext();
+        }
+        queue.temp = queue.front;
+        return size;
+       }
+
+
+       public void setSize(int size) {
+
+        this.size = size;
+       }
 
 }
