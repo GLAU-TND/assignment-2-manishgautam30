@@ -97,7 +97,14 @@ public class MyQueue {
 
         System.out.println(" ");
         queue.temp = queue.front;
-    }
+     }
+     
 
-
+     public void preOrder(TreeNode node) {
+        if (node != null) {
+        enqueue(new Node(node));
+        preOrder(node.getLeft());
+        preOrder(node.getRight());
+        }
+      }
 }
