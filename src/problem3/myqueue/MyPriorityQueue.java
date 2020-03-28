@@ -66,3 +66,12 @@ public class MyPriorityQueue {
     public int getSize() {
         return size;
     }
+
+         public boolean isEmpty(){
+       boolean response=false;
+       if(front==rear){
+          response=true;
+        }
+        return  response;
+     }
+}
