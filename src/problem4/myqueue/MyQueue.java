@@ -70,4 +70,22 @@ public class MyQueue {
         this.size = size;
        }
 
+       
+      public void enqueue(Node node) {
+        if (front == null) {
+            front=node;
+             rear=node;
+             temp=front;
+
+        } 
+        else {
+           while (temp.getNext() != null) {
+           temp = temp.getNext();
+          }
+            end = node;
+            tmp.setNext(node);
+            tmp = front;
+          }
+        }
+
 }
