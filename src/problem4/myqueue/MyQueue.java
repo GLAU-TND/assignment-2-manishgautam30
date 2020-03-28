@@ -82,10 +82,22 @@ public class MyQueue {
            while (temp.getNext() != null) {
            temp = temp.getNext();
           }
-            end = node;
-            tmp.setNext(node);
-            tmp = front;
+            rear = node;
+            temp.setNext(node);
+            temp = front;
           }
         }
+
+      
+    public void display(MyQueue queue) {
+        while (queue.temp != null) {
+            System.out.print(queue.temp.getNode().getData() + ",");
+            queue.temp = queue.temp.getNext();
+        }
+
+        System.out.println(" ");
+        queue.temp = queue.front;
+    }
+
 
 }
