@@ -34,3 +34,10 @@ public class MyMain {
 
         que.preOrder(root);
         que.display(que);
+
+        System.out.print("Enter to find preorder Successor : ");
+        que.printsuccessor(sc.nextInt());
+
+    }
+
+}
