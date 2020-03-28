@@ -21,7 +21,13 @@ public class MyQueue {
      rear=null;
      temp=null;
      size=0;
-     }
+    }
      
+     public Node getFront(){
+      return front;
+     }
+     public void setFront(Node front){
+     this.front=front;
+     }
       
 }
