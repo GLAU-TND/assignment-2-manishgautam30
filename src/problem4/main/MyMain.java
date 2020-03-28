@@ -31,3 +31,6 @@ public class MyMain {
         bst.insert(root, 90);
         bst.insert(root, 45);
         bst.insert(root, 62);
+
+        que.preOrder(root);
+        que.display(que);
